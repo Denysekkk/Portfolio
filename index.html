@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
 
@@ -46,8 +49,6 @@
             </div>
         </article>
     </section>
-
-    
         <article>
                 <div id="content">
                     <h1>Więcej o mnie</h1>
@@ -64,25 +65,36 @@
                 <div style="clear: both;"></div>
             </div>
         </article>
-        <article>
-            <div id="container5">                
-                <h1 style="text-align: left;">Moje Projekty</h1>
-                <div id="content6">
-                    <div id="2pr">
-                        <img src="img/Screenshot 2024-05-16 002028.png" width="400px" alt="l"><br>
-                        <p> Wisielec</p>
+    </section>
+    <section>
+            <div id="container5">
+                <h1>Moje projekty</h1>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/Screenshot 2024-05-16 001712.png" width="100%" height="500px"></div>
+                        <div class="swiper-slide"><img src="img/Screenshot 2024-05-16 002028.png" width="100%" height="500px"></div> 
+                        <div class="swiper-slide"><img src="img/Screenshot 2024-05-16 002340.png"  width="100%" height="500px"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div id="1pr">
-                        <img src="img/Screenshot 2024-05-16 001712.png" width="400px"  alt="l">
-                        <p>Próba zrobienia strony dla szkoły</p>
-                    </div>
-                    <div id="3pr">
-                        <img src="img/Screenshot 2024-05-16 002340.png" width="400px" height="210px"  alt="l">
-                        <p>aplikacja do pogody</p>
-                    </div>
-                </div>
-            </div> 
-        </article>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                        
+                <script>
+                        var swiper = new Swiper(".mySwiper", {
+                        spaceBetween: 30,
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                        pagination: {
+                        el: ".swiper-pagination",
+                    },
+                    mousewheel: true,
+                    keyboard: true,
+                     });
+                </script>
+            </div>
     </section>
 
     <footer id="footer">
