@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 body{
-    transition: 1s;
     padding: 0;
     margin: 0;
     background-color: #fff;
@@ -160,8 +159,6 @@ ul{list-style-type: none;}
     font-weight: 400;
 }
 
-
-
 #container4{
     width: 80%;
     margin-left: auto;
@@ -259,11 +256,14 @@ label{
     box-shadow: 0 0 5px #6c6c6c;
 }
 
+b{
+    color: #42773d;
+}
+
 #container5{
     width: 80%;
-    margin-left: auto;  
+    margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1%;
 }
 
 #container5 h1{
@@ -271,38 +271,7 @@ label{
     font-size: 49px;
     color: #201D1F;
     font-weight: bold;
-    margin-left: 2%;
-}
-
-#content6{
-    display: flex;
-    justify-content: space-around;
-}
-
-#content6 img{
-    border-radius: 7px;
-    width: 400px;
-    box-shadow: 0 0 5px #969597;
-}
-
-#content6 img:hover{
-    box-shadow: 0 0 15px #969597;
-}
-
-#container5{
     text-align: center;
-}
-
-
-#container5 p{
-    font-family: "Instrument Sans", sans-serif;
-    font-weight: 700;
-    font-size: 19px ;
-    color: #6c6c6c;
-}
-
-b{
-    color: #42773d;
 }
 
 #footer{
@@ -316,4 +285,65 @@ b{
     font-size: 19px;
     color: #969597;
     font-family: "Instrument Sans", sans-serif;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background: #fff;
+}
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    color: black;
+}
+
+html,
+body{
+  height: 100%;
+  font-size: 15px;
+}
+
+.swiper{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(129, 129, 129, 0.2);
+    width: 100%;
+}
+.swiper-slide{
+    padding-top: 1%;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width: 90%;
+    object-fit: cover;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: 140px !important; 
+    position: absolute; 
+    left: auto;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: 140px !important; 
+    right: auto;
+}
+
+.swiper-text{
+    text-shadow:0 0 10px rgba(129, 129, 129, 0.2);
+    position: absolute;
+    text-align: center;
 }
