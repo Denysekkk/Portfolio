@@ -27,8 +27,9 @@ h1{
     height: 35px;
     border-radius: 10px;
     border: none;
-    background-color: #385FF0;
-    color: #BDD0F4;
+    background: rgb(102,68,0);
+    background: linear-gradient(90deg, rgba(102,68,0,1) 0%, rgba(54,23,13,1) 100%);
+    color: #ededed;                                
     margin-top: 8%;
     font-weight: bold;
 }
@@ -56,7 +57,7 @@ ul{list-style-type: none;}
     text-decoration: none;
     font-family: "Instrument Sans", sans-serif;
     font-size: 16px;
-    color: #9F9CA0;
+    color: rgb(119, 116, 116);
 }
 
 #header a:hover{
@@ -72,6 +73,7 @@ ul{list-style-type: none;}
     margin-right: auto;
     display: flex;
     width: 80%;
+    padding-bottom:50px ;
 }
 
 #container3 h1{
@@ -86,17 +88,23 @@ ul{list-style-type: none;}
     font-size: 19px;
     color: #6c6c6c  ;
     font-family: "Instrument Sans", sans-serif;
+}
 
+#container3 b{
+    background: -webkit-linear-gradient(90deg, rgba(102,68,0,1) 0%, rgba(54,23,13,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #container3 input.inp1{
     font-size: 19px;
-    width: 212px;
-    height: 50px;
+    width: 200px;
+    height: 55px;
     border-radius: 5px;
     border: none;
-    background-color: #385FF0;
-    color: #BDD0F4;
+    background: rgb(102,68,0);
+    background: linear-gradient(90deg, rgba(102,68,0,1) 0%, rgba(54,23,13,1) 100%);
+    color: #ededed;
 }
 #container3 input.inp1:hover{
     opacity: 0.9;
@@ -105,8 +113,9 @@ ul{list-style-type: none;}
 
 #container3 input.inp2{
     font-size: 19px;
+    border-radius: 4px;
     width: 124px;
-    height: 50px;
+    height: 55px;
     border: solid 0.5px;
     border-color: #7D7C7D;
     background-color: #fff;
@@ -139,7 +148,7 @@ ul{list-style-type: none;}
 }
 
 #content{
-    margin-top: 5%;
+    margin-top: 4%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -257,7 +266,9 @@ label{
 }
 
 b{
-    color: #42773d;
+    background: -webkit-linear-gradient(90deg, rgba(102,68,0,1) 0%, rgba(54,23,13,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #container5{
@@ -288,7 +299,7 @@ b{
 }
 
 .swiper-container {
-    width: 100%;
+    width: 70%;
     height: 100vh;
 }
 .swiper-slide {
@@ -299,7 +310,7 @@ b{
     background: #fff;
 }
 .swiper-slide img {
-    width: 100%;
+    width: 70%;
     height: auto;
 }
 .swiper-button-next,
@@ -318,7 +329,7 @@ body{
     margin-right: auto;
     margin-top: 20px;
     box-shadow: 0 0 10px rgba(129, 129, 129, 0.2);
-    width: 100%;
+    width: 50%;
 }
 .swiper-slide{
     padding-top: 1%;
@@ -346,4 +357,9 @@ body{
     text-shadow:0 0 10px rgba(129, 129, 129, 0.2);
     position: absolute;
     text-align: center;
+}
+
+#row1{
+    background-color: #fafafa;
+    box-shadow: 0 0 3px #dadada;  
 }
