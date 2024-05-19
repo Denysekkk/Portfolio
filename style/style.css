@@ -387,6 +387,32 @@ body{
     #square4 img{
         width: 0;
     }
+}
 
-
+@media screen and (max-width: 600px) {
+    #container3{
+        grid-template-columns: 1fr;
+    }
+    #container3 img{
+        width: 475px;
+        margin-left: 0;
+    }
+    #square2{
+        margin-left: 0;
+    }
+    #square3{
+        width: auto;
+    }
+    #square3 h1{
+        text-align: center;
+    }
+    #content h1{
+        margin-left: 0;
+    }
+    #square3 p{
+        text-align: center;
+    }
+    #square4 img{
+        width: 0;
+    }
 }
