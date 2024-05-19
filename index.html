@@ -10,29 +10,26 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
-
-<div>
-    <header>
-        <div id="nav">
-            <div id="logo">
-                <p>logo</p>
+    <div id="row1">
+        <header>
+            <div id="nav">
+                <div id="logo">
+                    <p>logo</p>
+                </div>
+                <div id="header">
+                    <ul>
+                        <li><a href="index.html"><p>główna</p></a></li>
+                        <li><a href="#container4"><p>więcej</p></a></li>
+                        <li><a href="#content6"><p>projekty</p></a></li>
+                        <li><a href="contact.html"><p>konktakt</p></a></li>
+                        <a href="https://greepix.github.io/aleksander-portfolio/"><input type="button" value="Olek" width="101px" height="40px"></a>
+                    </ul>
+                </div>
             </div>
-            <div id="header">
-                <ul>
-                    <li><a href="index.html"><p>home</p></a></li>
-                    <li><a href="#container4"><p>about</p></a></li>
-                    <li><a href="#content6"><p>project</p></a></li>
-                    <li><a href="contact.html"><p>contact</p></a></li>
-                    <a href="https://greepix.github.io/aleksander-portfolio/"><input type="button" value="Olek" width="101px" height="40px"></a>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    <section>
+        </header>
         <article id="container3">
             <div id="square1">
-                <h1>Portfolio Programisty   </h1>
+                <h1>Portfolio Programisty</h1>
                 <p>Nazywam się <b>Denys Syvak</b>, mam 14 lat i uczęszczam do szkoły średniej. <br>Jestem na profilu <b>technik programista</b>, a moją pracą na lekcjach jest tworzenie aplikacji desktopowych. Reszta informacji jest umieszczona na stronie.</p>
                 <input type="button" value="Portfolio" class="inp1">
                 <input type="button" value="Więcej" class="inp2">
@@ -41,15 +38,13 @@
                 <img src="img/photo1713804576 (3).jpeg" alt="">
             </div>
         </article>
+    </div>
+
+    <section>
 
         <div style="clear: both;"></div>
-
-        <article>
-            <div id="content">
-            </div>
-        </article>
     </section>
-        <article>
+        <article style="margin-bottom: 50px;">
                 <div id="content">
                     <h1>Więcej o mnie</h1>
                 </div>
@@ -66,39 +61,10 @@
             </div>
         </article>
     </section>
-    <section>
-            <div id="container5">
-                <h1>Moje projekty</h1>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/Screenshot 2024-05-16 001712.png" width="100%" height="500px"></div>
-                        <div class="swiper-slide"><img src="img/Screenshot 2024-05-16 002028.png" width="100%" height="500px"></div> 
-                        <div class="swiper-slide"><img src="img/Screenshot 2024-05-16 002340.png"  width="100%" height="500px"></div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                        
-                <script>
-                        var swiper = new Swiper(".mySwiper", {
-                        spaceBetween: 30,
-                        navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                        },
-                        pagination: {
-                        el: ".swiper-pagination",
-                    },
-                    mousewheel: true,
-                    keyboard: true,
-                     });
-                </script>
-            </div>
-    </section>
+        <footer id="footer">
+            <p>Denys Syvak &copy; denysnansen@gmail.com</p>
+        </footer>
 
-    <footer id="footer">
-        <p>Denys Syvak &copy; denysnansen@gmail.com</p>
-    </footer>
-</div>
 
 </body>
 </html>
