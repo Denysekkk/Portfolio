@@ -71,7 +71,8 @@ ul{list-style-type: none;}
 #container3{
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 80%;
     padding-bottom:50px ;
 }
@@ -137,7 +138,7 @@ ul{list-style-type: none;}
 }
 
 #square2 img{
-    width: 95%;
+    width: 600px;
     margin-top: 15px;
     border-radius: 15px;
     box-shadow: 0 0 5px #6c6c6c;
@@ -362,4 +363,30 @@ body{
 #row1{
     background-color: #fafafa;
     box-shadow: 0 0 3px #dadada;  
+}
+
+@media screen and (max-width: 767px) {
+    #container3{
+        grid-template-columns: 1fr;
+    }
+    #square2{
+        margin-left: 0;
+    }
+    #square3{
+        width: auto;
+    }
+    #square3 h1{
+        text-align: center;
+    }
+    #content h1{
+        margin-left: 0;
+    }
+    #square3 p{
+        text-align: center;
+    }
+    #square4 img{
+        width: 0;
+    }
+
+
 }
