@@ -419,3 +419,8 @@ body{
         width: 0;
     }
 }
+@media screen and (max-width: 900px) {
+    #container3{
+         grid-template-columns: 1fr;
+    }
+}
