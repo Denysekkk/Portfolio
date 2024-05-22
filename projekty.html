@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+<div>
+    <header>
+        <div id="nav">
+            <div id="logo">
+                <p>logo</p>
+            </div>
+            <div id="header">
+                <ul>
+                    <li><a href="index.html"><p>główna</p></a></li>
+                    <li><a href="#container4"><p>więcej</p></a></li>
+                    <li><a href="projekty.html"><p>projekty</p></a></li>
+                    <li><a href="contact.html"><p>konktakt</p></a></li>
+                    <a href="https://greepix.github.io/aleksander-portfolio/"><input type="button" value="Olek" width="101px" height="40px"></a>
+                </ul>
+            </div>
+        </div>
+    </header>
+</div>
+
+<div id="container5">
+    <h1>Moje projekty</h1>
+    <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/Screenshot 2024-05-16 001712.png" width="100%" height="500px"></div>
+            <div class="swiper-slide"><img src="img/Screenshot 2024-05-16 002028.png" width="100%" height="500px"></div> 
+            <div class="swiper-slide"><img src="img/Screenshot 2024-05-16 002340.png"  width="100%" height="500px"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+            
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                mousewheel: true,
+                keyboard: true,
+            });
+        </script>
+    </div>
+
+</body>
+</html>
